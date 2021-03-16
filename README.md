@@ -26,7 +26,7 @@ https://flask.palletsprojects.com/en/1.1.x/installation/
   
  Если использовать Sqlite:
  
- SQLALCHEMY_DATABASE_URI = 'sqlite:///директория.db'
+ SQLALCHEMY_DATABASE_URI = 'sqlite:///директория/файл.db'
  
  В таком случае
 Пакет pymysql не нужен
