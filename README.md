@@ -2,11 +2,11 @@
 
 Проект работает на Linux
 
-Зависимости пакетов Linux
-  python3
+Зависимости пакетов Linux:
+  python3 \n
   mysql
 
-Зависимости библиотек pip
+Зависимости библиотек pip:
 flask 
 flask-sqlalchemy 
 flask-migrate 
