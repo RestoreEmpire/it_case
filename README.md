@@ -21,5 +21,6 @@ cryptography
 https://flask.palletsprojects.com/en/1.1.x/installation/
 
  Чтобы подключиться к MySQL нужно изменить config.py
+ 
   SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://пользователь:пароль@имя_сервера/бд'
   
