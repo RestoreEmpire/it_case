@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{% block title %}
+Страница {{user.username}}
+{% endblock %}
+{% block header %}
+<h2>Страница пользователя -  {{user.username}}</h2>
+{% endblock %}
+{% block body %}
+<div class="userpage">
+    Пользователь: {{user.username}}<br>
+    Имя: {{user.first_name}} {{user.last_name}} {{user.patronym}}<br>
+    E-mail: {{user.email}}<br>
+    Должность: {{post.position}}<br>
+    Обязанности: {{post.duty}}<br>
+    Наставник: {{mentor.first_name}} {{mentor.last_name}}<br>  
+</div>
+{% endblock %}

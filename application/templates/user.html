@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+
+{% block app_content %}
+<div class="container">
+    Пользователь: {{current_user.username}}<br>
+    Имя: {{current_user.first_name}} {{current_user.last_name}} {{current_user.patronym}}<br>
+    E-mail: {{current_user.email}}<br>
+    Должность: {{post.position}}<br>
+    Обязанности: {{post.duty}}<br>
+    Наставник: {{mentor.first_name}} {{mentor.last_name}}<br>    
+</div>
+<div class="container">
+    <ul class="list-group">
+        {%for i in range(stage|length)%}
+            {%if i + 1 < current_user.stage_id %}
+                <li class="list-group-item active" aria-current="true">{{stage[i][1]}} (Пройдено) </li>
+            {%elif i + 1 == current_user.stage_id %}
+            <li class="list-group-item" aria-current="true">{{stage[i][1]}} (Текущая цель)</li>
+            <p class="mb-1">{{stage[i][2]}}</p>
+            {%else%}
+                <li class="list-group-item">{{stage[i][1]}}</li>
+            {%endif%}
+        {%endfor%}
+    </ul>
+</div>
+{% endblock %}

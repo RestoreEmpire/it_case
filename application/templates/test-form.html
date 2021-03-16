@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block title %}
+Форма
+{% endblock %}
+{% block header %}
+<h1>Форма</h1>
+{% endblock %}
+{% block body %}
+<form method="POST">
+    <input type="text" name="title" id="title"></input><br>
+    <textarea name="intro" id="intro"></textarea><br>
+    <textarea name="text" id="text"></textarea><br>
+    <input type="submit" value="отправить"></input>
+    
+</form>
+{%endblock%}

@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% block title %}
+Тест инфо
+{% endblock %}
+{% block header %}
+<h1>Тест инфо</h1>
+{% endblock %}
+{% block body %}
+<div class="test-info">
+    <h2></h2>
+    {%for el in form_output%}
+    <div class="output">
+        <h3>{{el.title}}</h3>
+        <p>{{el.intro}}</p>
+        <p><b>{{el.date.date()}}</b></p>
+        <a href="/test-info/{{el.id}}" class="btn">Перейти</a>
+    </div>
+    {%endfor%}
+</div>
+{%endblock%}
