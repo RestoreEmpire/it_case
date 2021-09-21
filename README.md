@@ -1,10 +1,8 @@
 # it_case
 
-Проект работает на Linux
-
-Зависимости пакетов Linux:
+Зависимости:
   python3 
-  mysql
+  бд(используется mysql)
 
 Зависимости библиотек pip:
 flask 
@@ -20,11 +18,13 @@ cryptography
  Установка Flask и создание виртуальной среды
 https://flask.palletsprojects.com/en/1.1.x/installation/
 
- Чтобы подключиться к MySQL нужно изменить config.py
+ Чтобы подключиться к MySQL(или другой бд) нужно изменить config.py
+ 
+MySQL:
  
   SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://пользователь:пароль@имя_сервера/бд'
   
- Если использовать Sqlite:
+Sqlite:
  
  SQLALCHEMY_DATABASE_URI = 'sqlite:///директория/файл.db'
  
